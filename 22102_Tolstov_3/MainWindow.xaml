@@ -13,11 +13,11 @@
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" Text="Толстов | Вариант 3" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24"/>
         <TextBlock Grid.Row="1" Text="Введите размер массива :" Margin="120,14,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="24"/>
-        <TextBox x:Name="tboxArraySize" Grid.Row="1" Height="32" VerticalAlignment="Top" Margin="414,14,276,0" FontSize="24" PreviewTextInput="tbox_previewTextInput" RenderTransformOrigin="0.218,0.501" TextChanged="tboxArraySize_TextChanged"/>
+        <TextBox x:Name="tboxArray" Grid.Row="1" Height="32" VerticalAlignment="Top" Margin="414,14,276,0" FontSize="24" RenderTransformOrigin="0.218,0.501" TextChanged="tboxArraySize_TextChanged"/>
         <TextBlock Grid.Row="1" Text="Введите диапазон:" FontSize="24" Margin="195,71,396,263"/>
-        <TextBox x:Name="tboxRange1" Grid.Row="1" Height="32" VerticalAlignment="Top" Margin="414,71,331,0" FontSize="24" PreviewTextInput="tbox_previewTextInput"/>
-        <TextBox x:Name="tboxRange2" Grid.Row="1" Height="32" VerticalAlignment="Top" Margin="474,71,276,0" FontSize="24" PreviewTextInput="tbox_previewTextInput"/>
+        <TextBox x:Name="tboxStart" Grid.Row="1" Height="32" VerticalAlignment="Top" Margin="414,71,331,0" FontSize="24" TextChanged="tboxStart_TextChanged"/>
+        <TextBox x:Name="tboxEnd" Grid.Row="1" Height="32" VerticalAlignment="Top" Margin="474,71,276,0" FontSize="24" TextChanged="tboxEnd_TextChanged"/>
         <Button x:Name="btnGenerate" Content="Отсортировать" HorizontalAlignment="Center" Margin="0,127,0,0" Grid.Row="1" VerticalAlignment="Top" Height="39" Width="202" Click="btnGenerate_Click"/>
-        <Label x:Name="lblResult" FontSize="14" Content="" HorizontalAlignment="Left" Margin="40,217,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label x:Name="lblResult" FontSize="14" Content="" HorizontalAlignment="Left" Margin="286,216,0,0" Grid.Row="1" VerticalAlignment="Top" Width="222" Height="59"/>
     </Grid>
 </Window>
